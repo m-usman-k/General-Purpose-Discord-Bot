@@ -1,0 +1,8 @@
+.env
+
+
+/logs
+/ticket_logs
+/__pycache__
+
+*/__pycache__
