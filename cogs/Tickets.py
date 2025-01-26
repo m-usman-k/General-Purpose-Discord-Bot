@@ -31,9 +31,6 @@ class Tickets(commands.Cog):
 
         async def button_callback(interaction: discord.Interaction):
             await interaction.response.defer(ephemeral=True)
-            if interaction.user != ctx.author:
-                await interaction.response.send_message("Only the command initiator can use this button.", ephemeral=True)
-                return
 
             guild = interaction.guild
             ticket_category = discord.utils.get(guild.categories, name="Tickets")
